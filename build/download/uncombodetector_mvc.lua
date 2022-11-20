@@ -86,6 +86,8 @@ while true do
 	memory.writebyte(0xff36c6,0x9)
 	memory.writebyte(0xff3ac6,0x9)
 	memory.writebyte(0xff3ec6,0x9)
+	--p2["P2 Up"] = true;
+	--p2["P2 Right"] = true;
 	gui.text(2,64,"Hitstun: "..memory.readbyte(0xff3120),"green")
 	gui.text(2,72,"Ypos: "..memory.readword(0xff3010 + (mode * 0x400)),"yellow")
 	joypad.set(p2);

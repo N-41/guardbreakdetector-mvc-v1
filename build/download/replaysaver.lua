@@ -124,7 +124,7 @@ while true do
 	--
 	--no tuve tiempo para guardar todos los proyectiles como guarde algunos perso-
 	--najes, así que no vamos a obtener el número identificador de proyectil
-	if memory.readbyte(0xff4000) == 6 or memory.readbyte(0xff4000) == 8 or memory.readbyte(0xff4000 == 0xa then
+	if memory.readbyte(0xff4000) == 6 or memory.readbyte(0xff4000) == 8 or memory.readbyte(0xff4000) == 0xa then
 	--si estamos en alguno de los siguientes estados de juego:
 	--6 - el estado antes de empezar el round, donde ambos jugadores pueden caminar adelante
 	--o atrás, para preparar qué posición quieren antes de que empiece el juego
